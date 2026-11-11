@@ -1,5 +1,5 @@
 # Verificación del entorno R. Ejecutar desde la raíz del .Rproj
-cat("R instalado:", getRversion(), "\n")
+cat("R instalado:", as.character(getRversion()), "\n")
 cat("Directorio:", getwd(), "\n")
 stopifnot(file.exists("datos/experimento_fenotipo_sintetico.csv"))
 x <- read.csv("datos/experimento_fenotipo_sintetico.csv")

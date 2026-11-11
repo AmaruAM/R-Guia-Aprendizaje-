@@ -1,0 +1,11 @@
+# Bitácora de aprendizaje — plantilla
+- Semana y clase:
+- Fecha y tiempo dedicado:
+- Pregunta biológica:
+- Datos y procedencia:
+- Comandos utilizados:
+- Errores y cómo los resolví:
+- Resultado principal (con figura si corresponde):
+- Interpretación en lenguaje sencillo:
+- Limitaciones / supuestos:
+- Próximo paso:

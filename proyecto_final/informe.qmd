@@ -1,0 +1,37 @@
+---
+title: "Análisis reproducible de un experimento biológico (datos sintéticos)"
+author: "Estudiante"
+format: html
+execute:
+  echo: true
+  warning: false
+---
+
+## Pregunta y origen de datos
+
+Este ejemplo utiliza un conjunto de datos **sintético** incluido en el repositorio. No contiene resultados experimentales reales.
+
+## Métodos
+
+```{r}
+d <- read.csv("datos/experimento_fenotipo_sintetico.csv")
+stopifnot(all(c("sample_id", "condicion", "respuesta") %in% names(d)))
+summary(d)
+```
+
+## Resultados exploratorios
+
+```{r}
+boxplot(respuesta ~ condicion, data=d,
+        xlab="Condición", ylab="Respuesta (unidades simuladas)",
+        main="Comparación exploratoria; datos sintéticos")
+aggregate(respuesta ~ condicion, data=d, FUN=mean)
+```
+
+## Limitaciones
+
+Son datos simulados y no existe inferencia biológica real. Para un experimento auténtico hay que documentar diseño, réplicas, lotes y supuestos del modelo.
+
+## Conclusión
+
+[Escribe aquí tu interpretación y lo que no puedes concluir.]
